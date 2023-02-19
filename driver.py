@@ -1,4 +1,4 @@
-sample = 20
+sample = 20 #change to how many samples you want to average over
 import lambda_min_sphere as TS
 TS.plot(sample)
 
