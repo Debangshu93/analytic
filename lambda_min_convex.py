@@ -28,7 +28,7 @@ def ts(dimension):
         x_opt = cp.Variable(d)
        
         objective = cp.Maximize(x_opt.T @ theta_tilde)
-        constraint = [cp.norm(x_opt, 10)<=1]
+        constraint = [cp.norm(x_opt, 10)<=1] # change 10 to your favourite p-norm ball
         cp.Problem(objective, constraint).solve()
         x = x_opt.value
         y = np.dot(x.reshape(1,d),theta_star) + np.random.normal(0,1)
@@ -68,7 +68,7 @@ def plot(sample):
         plt.fill_between(range(1,5000), mean-2*std, mean+2*std, alpha = 0.20)
         plt.axhline(y=0.5, color="black", linestyle=":")
         plt.ylabel(r"$\frac{\log{(\lambda_{\min}(V_n))}}{\log{n}}$")
-        #plt.yticks(fontsize=20)
+        
         plt.xlabel(r"rounds ($n$) ")
         plt.legend(loc = 'best')
     plt.show()
