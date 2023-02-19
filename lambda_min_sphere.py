@@ -63,7 +63,7 @@ def plot(sample):
         plt.fill_between(range(1,iter_dict[d]), mean-2*std, mean+2*std, alpha = 0.20)
         plt.axhline(y=0.5, color="black", linestyle=":")
         plt.ylabel(r"$\frac{\log{(\lambda_{\min}(V_n))}}{\log{n}}$")
-        #plt.yticks(fontsize=20)
+        
         plt.xlabel(r"rounds ($n$) ")
         plt.legend(loc = 'best')
         plt.show()
