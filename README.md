@@ -1,3 +1,3 @@
 # analytic
 
-Check the thompson sampling.py and the n0_V_d.py
+Run driver.py as python driver.py from terminal to get all results.
