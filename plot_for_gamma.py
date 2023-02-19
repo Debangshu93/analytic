@@ -52,7 +52,7 @@ def plot(sample):
         plt.axhline(y=-1.5, color="black", linestyle="-")
         plt.text(1000, -1.5, 'baseline=-1.5', color = 'black')
         plt.ylabel(r"$\frac{\log{(n^{-\frac{1}{2}}\lambda_{\min}(V_n))}}{\log{d}}$")
-        #plt.yticks(fontsize=20)
+        
         plt.xlabel(r"rounds ($n$) ")
         plt.ylim([-1.5,0.8])
         plt.legend(loc = 'lower right')
