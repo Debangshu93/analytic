@@ -23,7 +23,7 @@ def ts(dimension):
         theta_tilde = theta_hat.reshape(d,) + np.random.multivariate_normal(np.zeros((d,)),var).reshape(d,)
         x_opt = cp.Variable(d)
         objective = cp.Maximize(x_opt.T @ theta_tilde)
-        constraint = [cp.norm(x_opt,3)<=1]
+        constraint = [cp.norm(x_opt,3)<=1] // use this to change action sets
         cp.Problem(objective, constraint).solve()
         x = x_opt.value
         #x = (theta_tilde)/np.linalg.norm(theta_tilde,2)
