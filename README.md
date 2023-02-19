@@ -4,12 +4,12 @@ Images for the results in the paper "Exploration in Linear Bandits in Rich Actio
 
 Run driver.py as python driver.py from terminal to get all results.
 
-run lambda_min_sphere.py to generate figure 2
+Run lambda_min_sphere.py to generate figure 2 (Minimum eigen value of Sphere). Image saved as d3, d5, d10, d20 pdf files.
 
-run plot_for_n0.py tp generate left image of figure 3
+Run plot_for_n0.py to generate left image of figure 3 (How n_0 varies). Image saved as n_0.pdf.
 
-run plot_for_gamma.py tp generate right image of figure 3
+Run plot_for_gamma.py to generate right image of figure 3 (How \gamma varies). Image saved as gamma.pdf.
 
-run lambda_min_convex.py to generate figure 5
+Run lambda_min_convex.py to generate figure 5 (Minimum eigen-value of l_10 ball). Image saved as convex.pdf.
 
-to run each program separately run it from a python interpreter. Import the respective python library and run the plot() method.
+To run each program separately run it from a python interpreter. Import the respective python library and run the plot() method.
