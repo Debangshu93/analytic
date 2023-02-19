@@ -12,4 +12,6 @@ Run plot_for_gamma.py to generate right image of figure 3 (How \gamma varies). I
 
 Run lambda_min_convex.py to generate figure 5 (Minimum eigen-value of l_10 ball). Image saved as convex.pdf.
 
-To run each program separately run it from a python interpreter. Import the respective python library and run the plot() method.
+To run each program separately run it from a python interpreter. Import the respective python module and run the plot() method.
+
+lambda_min_convex.py requires cvxpy python package.
