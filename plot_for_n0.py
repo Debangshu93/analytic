@@ -1,7 +1,6 @@
 from turtle import color
 import numpy as np
 import matplotlib.pyplot as plt
-#import cvxpy as cp
 import scipy.linalg as scp
 import os
  
